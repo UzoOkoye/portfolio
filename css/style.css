@@ -1,0 +1,180 @@
+/* Hero Section with Background Image */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero.jpg') no-repeat center center;
+    background-size: auto auto;
+    display: flex;
+    align-items: center;
+    color: rgb(194, 238, 255);
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 3px;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.typed-text {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    min-height: 2.5rem;
+}
+
+.social-links-hero {
+    margin-top: 2rem;
+}
+
+.social-links-hero a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-links-hero a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+/* Scroll down indicator */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle, .typed-text {
+        font-size: 1.2rem;
+    }
+}
+
+/* CV Download Button Styles */
+.btn-download-cv {
+    border-radius: 8px;
+    font-weight: 600;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    border-width: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.btn-download-cv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar specific button style */
+.navbar .btn-download-cv {
+    padding: 8px 16px;
+    margin-top: 4px;
+}
+
+/* About section button style */
+#about .btn-download-cv {
+    padding: 12px 28px;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .btn-download-cv {
+        margin: 10px 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #about .btn-download-cv {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Footer Services Styles */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 40px 0 20px;
+}
+
+footer h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+footer .badge {
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .badge:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+    footer .badge {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+    
+    footer h5 {
+        font-size: 1.1rem;
+    }
+}
